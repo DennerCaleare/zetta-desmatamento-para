@@ -93,6 +93,4 @@ Depois, abra o arquivo `analise_governanca_para.ipynb`
 
 ## 🤝 Contato
 
-Este projeto foi desenvolvido por [Seu Nome Aqui] para o ZettaLab.
-
-# zetta-desmatamento-para
+Este projeto foi desenvolvido por Denner Gabriel Ramos Caleare para o ZettaLab.
