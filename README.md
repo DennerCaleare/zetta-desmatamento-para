@@ -16,21 +16,23 @@ Este projeto foi desenvolvido como parte do processo seletivo para o ZettaLab (t
 
 ```
 ├── dados/ # 📥 Dados brutos originais
-│ ├── dados_ibge_para.xlsx
-│ └── dados_desmatamento_para.csv
+│ ├── dados_ibge_para.xlsx # Dados do IBGE
+│ └── dados_desmatamento_para.csv # Dados de desmatamento no Pará
 │
 ├── saida/ # 📊 Dados tratados
-│ └── base_completa_merge.csv
+│ └── base_completa_merge.csv # Dados unificados e prontos
 │
-├── .ipynb_checkpoints/ # (gerado automaticamente pelo Jupyter)
+├── .ipynb_checkpoints/ # (Gerado automaticamente pelo Jupyter)
+│
 ├── analise_governanca_para.ipynb # 📓 Notebook com a análise principal
-├── zetta_relatorio_desmatamento_para.ipynb # Versão alternativa/antiga do notebook
+├── zetta_relatorio_desmatamento_para.ipynb # 📘 Notebook do relatório final
 ├── app.py # 🖥️ Dashboard interativo com Streamlit
 ├── dashboard_relatorio.html # 🌐 Exportação HTML da análise
-├── relatorio_final.pdf # 📄 Relatório PDF com texto e gráficos
-├── README.md # 📘 Instruções e explicações do projeto
+├── relatorio_final.pdf # 📄 Relatório final em PDF
+│
+├── README.md # 📚 Instruções e explicações do projeto
 ├── requirements.txt # 📦 Dependências do projeto
-├── .DS_Store # (arquivo do macOS, pode ser ignorado)
+├── .DS_Store # (Arquivo do macOS — pode ser ignorado)
 ```
 
 ---
