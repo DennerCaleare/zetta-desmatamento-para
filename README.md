@@ -15,17 +15,22 @@ Este projeto foi desenvolvido como parte do processo seletivo para o ZettaLab (t
 ## 🗂️ Estrutura do Projeto
 
 ```
-zetta-desmatamento-para/
-├── dados/                          # Dados brutos
-│   ├── dados_ibge_para.xlsx
-│   └── dados_desmatamento_para.csv
-├── saida/                          # Base tratada e pronta para análise
-│   └── base_completa_merge.csv
-├── app.py                          # Dashboard Streamlit
-├── analise_governanca_para.ipynb  # Notebook com a análise completa
-├── relatorio_final.pdf             # Relatório descritivo final
-├── README.md                       # Este arquivo
-└── requirements.txt                # Dependências do projeto
+├── dados/ # 📥 Dados brutos originais
+│ ├── dados_ibge_para.xlsx
+│ └── dados_desmatamento_para.csv
+│
+├── saida/ # 📊 Dados tratados
+│ └── base_completa_merge.csv
+│
+├── .ipynb_checkpoints/ # (gerado automaticamente pelo Jupyter)
+├── analise_governanca_para.ipynb # 📓 Notebook com a análise principal
+├── zetta_relatorio_desmatamento_para.ipynb # Versão alternativa/antiga do notebook
+├── app.py # 🖥️ Dashboard interativo com Streamlit
+├── dashboard_relatorio.html # 🌐 Exportação HTML da análise
+├── relatorio_final.pdf # 📄 Relatório PDF com texto e gráficos
+├── README.md # 📘 Instruções e explicações do projeto
+├── requirements.txt # 📦 Dependências do projeto
+├── .DS_Store # (arquivo do macOS, pode ser ignorado)
 ```
 
 ---
@@ -93,4 +98,13 @@ Depois, abra o arquivo `analise_governanca_para.ipynb`
 
 ## 🤝 Contato
 
-Este projeto foi desenvolvido por Denner Gabriel Ramos Caleare para o ZettaLab.
+Este projeto foi desenvolvido por Denner Gabriel Ramos Caleare.
+
+🔗 [LinkedIn](https://www.linkedin.com/in/dennercaleare/)
+
+
+
+
+
+
+
