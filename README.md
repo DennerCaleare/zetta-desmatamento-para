@@ -1,148 +1,138 @@
-# 🌱 Análise de Desmatamento e Governança de Dados no Pará
+# 🌱 Análise de Desmatamento no Pará
+## Projeto-Based Learning em Data Science
 
-> Projeto de análise exploratória integrando dados de desmatamento (INPE) com indicadores socioeconômicos (IBGE) para o estado do Pará.
+> **Projeto de aprendizado prático que integrou dados de desmatamento (INPE) com indicadores socioeconômicos (IBGE) para explorar relações entre ambiental e desenvolvimento no Pará. Dashboard interativo + Notebooks Jupyter + Relatório PDF.**
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://zetta-desmatamento-para.streamlit.app/)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Project Status](https://img.shields.io/badge/status-analysis%20complete-green.svg)](#)
+[![Learning Project](https://img.shields.io/badge/Type-Research%20%26%20Learning-blue.svg)](#)
 
 ## 🚀 Acesso Rápido
 
-👉 **[Abrir Dashboard Online](https://zetta-desmatamento-para.streamlit.app/)**
+**Explore os dados:** https://zetta-desmatamento-para.streamlit.app/
 
-## 📊 Sobre o Projeto
+**Desenvolvedor:** Denner Caleare | [GitHub](https://github.com/DennerCaleare) | [LinkedIn](https://linkedin.com/in/dennercaleare)
 
-Projeto desenvolvido para o processo seletivo do **ZettaLab** (trilha de Governança de Dados) que explora a relação entre o desmatamento na Amazônia brasileira (estado do Pará) e os indicadores socioeconômicos de seus municípios.
+---
 
-### ✨ Funcionalidades
+## 🎉 História Deste Projeto
 
-- 📅 Integração de dados de múltiplas fontes (INPE e IBGE)
-- 📊 Análise exploratória com Python (Pandas, NumPy, Plotly)
-- 📱 Dashboard interativo com filtros dinâmicos
-- 📈 Visualizações de correlacão e tendências
-- 📑 Relatório final em PDF e HTML
-- 📋 Notebooks Jupyter com análise completa
+Quando comecei a estudar **Data Science**, quis aplicar o aprendizado em algo real. Baixei bases de dados públicas do INPE (desmatamento) e IBGE (dados socioeconômicos) e construí uma solução completa de análise.
 
-## 💳 Objetivos
+**O que aprendi:**
+- 📚 Pandas, NumPy, Plotly para EDA
+- 🎯 Streamlit para criar dashboards
+- 🗺️ GeoPandas para dados geoespaciais
+- 📊 Criação de relatórios profissionais (PDF + HTML)
+- 📝 Jupyter Notebooks para documentação de análise
 
-- ✍️ Integrar dados públicos de desmatamento (INPE) com dados socioeconômicos (IBGE)
-- 📈 Realizar análise exploratória e gerar visualizações com Python
-- 📱 Apresentar um dashboard interativo com filtros por ano, município e IDHM
-- 📚 Produzir relatório final com insights e recomendações
+## ✨ Entregaveis
 
-## 🛠️ Tecnologias
+### 📱 Dashboard Interativo
+- Filtros por período (2008-2024)
+- Visualização por município
+- Gráficos de tendências de desmatamento
+- Correlação com IDHM
+- Export de dados filtrados
+
+### 📚 Notebooks Jupyter
+- `analise_governanca_para.ipynb` - Análise exploratória completa
+- `zetta_relatorio_desmatamento_para.ipynb` - Relatório final
+- Visualizações, insights e recomendações
+
+### 📁 Saídas
+- 📈 Dashboard HTML interativo
+- 📄 Relatório em PDF
+- 📂 Datasets processados em CSV
+
+## 🛠️ Stack Técnico
 
 ```python
 Python 3.8+         # Linguagem principal
-Pandas              # Manipulação de dados
+Pandas 2.0+        # Manipulação de dados
 NumPy               # Cálculos numéricos
 Matplotlib          # Visualização estática
 Plotly              # Gráficos interativos
 Streamlit           # Dashboard web
-Jupyter             # Notebooks interativos
+GeoPandas           # Dados geoespaciais
+Jupyter             # Notebooks
 ```
 
 ## 📂 Estrutura do Projeto
 
 ```
 zetta-desmatamento-para/
-├── dados/                                  # Dados brutos originais
-│   ├── dados_ibge_para.xlsx              # Dados IBGE
-│   └── dados_desmatamento_para.csv        # Dados INPE
-├── saida/                                 # Dados tratados e processados
-│   └── base_completa_merge.csv             # Dataset unificado
-├── analise_governanca_para.ipynb        # Notebook da análise
-├── zetta_relatorio_desmatamento_para.ipynb # Notebook do relatório
+├── dados/                                  # Dados brutos INPE + IBGE
+│   ├── dados_ibge_para.xlsx
+│   └── dados_desmatamento_para.csv
+├── saida/                                 # Dados processados
+│   └── base_completa_merge.csv
+├── analise_governanca_para.ipynb        # Notebook de análise
+├── zetta_relatorio_desmatamento_para.ipynb # Notebook de relatório
 ├── app.py                               # Dashboard Streamlit
-├── dashboard_relatorio.html             # Relatório em HTML
-├── relatorio_final.pdf                  # Relatório final em PDF
+├── dashboard_relatorio.html             # Relatório HTML
+├── relatorio_final.pdf                  # Relatório PDF
 ├── requirements.txt                    # Dependências
 └── README.md                           # Este arquivo
 ```
 
-## 📦 Instalação
+## 🚀 Como Usar
 
-### 1. Clonar o repositório
+### 1. Acessar o Dashboard Online
+```
+https://zetta-desmatamento-para.streamlit.app/
+```
 
+### 2. Rodar Localmente
 ```bash
 git clone https://github.com/DennerCaleare/zetta-desmatamento-para.git
 cd zetta-desmatamento-para
-```
-
-### 2. Criar ambiente virtual (opcional)
-
-```bash
-# Windows
-python -m venv zetta-env
-zetta-env\Scripts\activate
-
-# macOS/Linux
-python3 -m venv zetta-env
-source zetta-env/bin/activate
-```
-
-### 3. Instalar dependências
-
-```bash
 pip install -r requirements.txt
-```
-
-### 4. Rodar o dashboard
-
-```bash
 streamlit run app.py
 ```
 
-O dashboard abrirá automaticamente em [http://localhost:8501](http://localhost:8501/)
-
-## 📋 Visualizar a Análise
-
-Para ver toda a análise com gráficos e explicações:
-
+### 3. Explorar os Notebooks
 ```bash
 jupyter notebook
+# Abra analise_governanca_para.ipynb ou zetta_relatorio_desmatamento_para.ipynb
 ```
 
-Depois, abra `analise_governanca_para.ipynb`
+## 📊 Dados Utilizados
 
-## 📊 Dados e Fontes
+| Fonte | Descrição | Período |
+|-------|-------------|----------|
+| **INPE** | Desmatamento na Amazônia | 2008-2024 |
+| **IBGE** | Indicadores socioeconômicos | 2010-2024 |
+| **Scope** | Estado do Pará | 144 municípios |
 
-| Fonte | Descrição | Link |
-|-------|-------------|------|
-| INPE | Desmatamento na Amazônia | [TerraBrasilis](http://terrabrasilis.dpi.inpe.br/) |
-| IBGE | Indicadores socioeconômicos | [IBGE Cidades](https://www.ibge.gov.br/) |
+## 📊 Principais Insights
 
-## 📋 Principais Insights
+🔍**Questões Respondidas:**
+- Como o desmatamento varia temporalmente?
+- Existe correlação entre desmatamento e IDHM?
+- Quais municípios têm maior taxa de desmatamento?
+- Como visualizar tendências por região?
 
-- A análise explora correlações entre desmatamento e IDHM
-- Dados de 2008-2024 para acompanhamento de tendências
-- Métricas por município do estado do Pará
-- Visualizações interativas para exploração de dados
+## 🎓 Desenvolvido por
 
-## 📁 Saídas do Projeto
+**Denner Caleare**
 
-- 📈 Dashboard interativo (Streamlit)
-- 📑 Relatório em PDF
-- 📚 Notebooks Jupyter com análises
-- 📊 Visualizações interativas (Plotly)
-- 📂 Datasets processados em CSV
+- 👋 Iniciando em Data Science
+- 📚 Apaixonado por dados e sustentabilidade
+- 🌟 Autor do ZettaLab Learning Program
 
-## 💡 Observações
+**Contato:**
+- [GitHub](https://github.com/DennerCaleare)
+- [LinkedIn](https://linkedin.com/in/dennercaleare)
 
-- O ano de **2007** foi desmarcado por padrão (dados acumulados - distorções)
-- Os dados do IBGE são estáticos (referência 2010-2024)
-- O projeto funciona em qualquer SO com Python instalado
+## 🌐 Tema
 
-## 👨‍💻 Desenvolvido por
-
-**Denner Caleare** | [GitHub](https://github.com/DennerCaleare) | [LinkedIn](https://linkedin.com/in/dennercaleare)
-
-Como parte do processo seletivo para o **ZettaLab** - Programa de Governança de Dados
+América Latina | Sustentabilidade | Desmatamento | Data Science | Análise Ambiental
 
 ## 📝 Licença
 
-Este projeto é de cáráter acadêmico e pode ser utilizado como referência para estudos e análises similares.
+Projeto acadêmico de aprendizado. Dados públicos INPE + IBGE.
 
 ---
 
-**Desenvolvido com ❤️ em Lavras, MG**
+**Desenvolvido com ❤️ em Lavras, MG | ZettaLab - UFLA**
