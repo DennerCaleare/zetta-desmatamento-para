@@ -1,48 +1,75 @@
-# 🌱 Projeto ZettaLab - Análise de Desmatamento e Indicadores Socioeconômicos no Pará
+# 🌱 Análise de Desmatamento e Governança de Dados no Pará
 
-Este projeto foi desenvolvido como parte do processo seletivo para o ZettaLab (trilha de Governança de Dados) e tem como objetivo explorar a relação entre o desmatamento na Amazônia (Pará) e indicadores socioeconômicos dos municípios.
+> Projeto de análise exploratória integrando dados de desmatamento (INPE) com indicadores socioeconômicos (IBGE) para o estado do Pará.
 
----
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://zetta-desmatamento-para.streamlit.app/)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Project Status](https://img.shields.io/badge/status-analysis%20complete-green.svg)](#)
 
-## 🧠 Objetivo
+## 🚀 Acesso Rápido
 
-- Integrar dados públicos de desmatamento (INPE) com dados socioeconômicos (IBGE)
-- Realizar análise exploratória e gerar visualizações com Python
-- Apresentar um dashboard interativo com filtros por ano, município e IDHM
+👉 **[Abrir Dashboard Online](https://zetta-desmatamento-para.streamlit.app/)**
 
----
+## 📊 Sobre o Projeto
 
-## 🗂️ Estrutura do Projeto
+Projeto desenvolvido para o processo seletivo do **ZettaLab** (trilha de Governança de Dados) que explora a relação entre o desmatamento na Amazônia brasileira (estado do Pará) e os indicadores socioeconômicos de seus municípios.
+
+### ✨ Funcionalidades
+
+- 📅 Integração de dados de múltiplas fontes (INPE e IBGE)
+- 📊 Análise exploratória com Python (Pandas, NumPy, Plotly)
+- 📱 Dashboard interativo com filtros dinâmicos
+- 📈 Visualizações de correlacão e tendências
+- 📑 Relatório final em PDF e HTML
+- 📋 Notebooks Jupyter com análise completa
+
+## 💳 Objetivos
+
+- ✍️ Integrar dados públicos de desmatamento (INPE) com dados socioeconômicos (IBGE)
+- 📈 Realizar análise exploratória e gerar visualizações com Python
+- 📱 Apresentar um dashboard interativo com filtros por ano, município e IDHM
+- 📚 Produzir relatório final com insights e recomendações
+
+## 🛠️ Tecnologias
+
+```python
+Python 3.8+         # Linguagem principal
+Pandas              # Manipulação de dados
+NumPy               # Cálculos numéricos
+Matplotlib          # Visualização estática
+Plotly              # Gráficos interativos
+Streamlit           # Dashboard web
+Jupyter             # Notebooks interativos
+```
+
+## 📂 Estrutura do Projeto
 
 ```
-├── dados/ # 📥 Dados brutos originais
-│ ├── dados_ibge_para.xlsx # Dados do IBGE
-│ └── dados_desmatamento_para.csv # Dados de desmatamento no Pará
-│
-├── saida/ # 📊 Dados tratados
-│ └── base_completa_merge.csv # Dados unificados e prontos
-│
-├── .ipynb_checkpoints/ # (Gerado automaticamente pelo Jupyter)
-│
-├── analise_governanca_para.ipynb # 📓 Notebook com a análise principal
-├── zetta_relatorio_desmatamento_para.ipynb # 📘 Notebook do relatório final
-├── app.py # 🖥️ Dashboard interativo com Streamlit
-├── dashboard_relatorio.html # 🌐 Exportação HTML da análise
-├── relatorio_final.pdf # 📄 Relatório final em PDF
-│
-├── README.md # 📚 Instruções e explicações do projeto
-├── requirements.txt # 📦 Dependências do projeto
-├── .DS_Store # (Arquivo do macOS — pode ser ignorado)
+zetta-desmatamento-para/
+├── dados/                                  # Dados brutos originais
+│   ├── dados_ibge_para.xlsx              # Dados IBGE
+│   └── dados_desmatamento_para.csv        # Dados INPE
+├── saida/                                 # Dados tratados e processados
+│   └── base_completa_merge.csv             # Dataset unificado
+├── analise_governanca_para.ipynb        # Notebook da análise
+├── zetta_relatorio_desmatamento_para.ipynb # Notebook do relatório
+├── app.py                               # Dashboard Streamlit
+├── dashboard_relatorio.html             # Relatório em HTML
+├── relatorio_final.pdf                  # Relatório final em PDF
+├── requirements.txt                    # Dependências
+└── README.md                           # Este arquivo
 ```
 
----
+## 📦 Instalação
 
-## ⚙️ Como executar o projeto
+### 1. Clonar o repositório
 
-### 1. Instalar o Python (>= 3.8)
-- [Python para Windows/macOS/Linux](https://www.python.org/downloads/)
+```bash
+git clone https://github.com/DennerCaleare/zetta-desmatamento-para.git
+cd zetta-desmatamento-para
+```
 
-### 2. (Opcional) Criar um ambiente virtual
+### 2. Criar ambiente virtual (opcional)
 
 ```bash
 # Windows
@@ -54,7 +81,7 @@ python3 -m venv zetta-env
 source zetta-env/bin/activate
 ```
 
-### 3. Instalar as dependências
+### 3. Instalar dependências
 
 ```bash
 pip install -r requirements.txt
@@ -66,47 +93,56 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-> Isso abrirá automaticamente o dashboard no navegador: http://localhost:8501
+O dashboard abrirá automaticamente em [http://localhost:8501](http://localhost:8501/)
 
----
+## 📋 Visualizar a Análise
 
-## 📊 Visualizar a análise no Jupyter
-
-Se preferir ver toda a análise com gráficos e explicações passo a passo:
+Para ver toda a análise com gráficos e explicações:
 
 ```bash
-# Rodar Jupyter
 jupyter notebook
 ```
 
-Depois, abra o arquivo `analise_governanca_para.ipynb`
+Depois, abra `analise_governanca_para.ipynb`
+
+## 📊 Dados e Fontes
+
+| Fonte | Descrição | Link |
+|-------|-------------|------|
+| INPE | Desmatamento na Amazônia | [TerraBrasilis](http://terrabrasilis.dpi.inpe.br/) |
+| IBGE | Indicadores socioeconômicos | [IBGE Cidades](https://www.ibge.gov.br/) |
+
+## 📋 Principais Insights
+
+- A análise explora correlações entre desmatamento e IDHM
+- Dados de 2008-2024 para acompanhamento de tendências
+- Métricas por município do estado do Pará
+- Visualizações interativas para exploração de dados
+
+## 📁 Saídas do Projeto
+
+- 📈 Dashboard interativo (Streamlit)
+- 📑 Relatório em PDF
+- 📚 Notebooks Jupyter com análises
+- 📊 Visualizações interativas (Plotly)
+- 📂 Datasets processados em CSV
+
+## 💡 Observações
+
+- O ano de **2007** foi desmarcado por padrão (dados acumulados - distorções)
+- Os dados do IBGE são estáticos (referência 2010-2024)
+- O projeto funciona em qualquer SO com Python instalado
+
+## 👨‍💻 Desenvolvido por
+
+**Denner Caleare** | [GitHub](https://github.com/DennerCaleare) | [LinkedIn](https://linkedin.com/in/dennercaleare)
+
+Como parte do processo seletivo para o **ZettaLab** - Programa de Governança de Dados
+
+## 📝 Licença
+
+Este projeto é de cáráter acadêmico e pode ser utilizado como referência para estudos e análises similares.
 
 ---
 
-## 📥 Fontes de Dados
-
-- [INPE - PRODES/TerraBrasilis](http://terrabrasilis.dpi.inpe.br/)
-- [IBGE - Cidades e Indicadores](https://www.ibge.gov.br/)
-
----
-
-## 📌 Observações
-
-- O ano de **2007** foi desmarcado por padrão por conter dados acumulados (distorções).
-- Os dados do IBGE são estáticos (referência 2010–2024).
-- O projeto pode ser executado em qualquer sistema operacional com Python instalado.
-
----
-
-## 🤝 Contato
-
-Este projeto foi desenvolvido por Denner Gabriel Ramos Caleare.
-
-🔗 [LinkedIn](https://www.linkedin.com/in/dennercaleare/)
-
-
-
-
-
-
-
+**Desenvolvido com ❤️ em Lavras, MG**
